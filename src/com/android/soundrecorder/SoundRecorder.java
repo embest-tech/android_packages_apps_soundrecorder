@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2011 The Android Open Source Project
+ * Copyright (C) 2012 Freescale Semiconductor, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -204,8 +205,8 @@ public class SoundRecorder extends Activity
     static final String AUDIO_ANY = "audio/*";
     static final String ANY_ANY = "*/*";
     
-    static final int BITRATE_AMR =  5900; // bits/sec
-    static final int BITRATE_3GPP = 5900;
+    static final int BITRATE_AMR =  12200; // bits/sec
+    static final int BITRATE_3GPP = 12200;
     
     WakeLock mWakeLock;
     String mRequestedType = AUDIO_ANY;
