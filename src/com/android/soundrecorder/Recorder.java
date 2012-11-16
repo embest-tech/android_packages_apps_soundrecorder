@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2011 The Android Open Source Project
+ * Copyright (C) 2012 Freescale Semiconductor, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -164,6 +165,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         mRecorder.setOutputFormat(outputfileformat);
         mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
         mRecorder.setOutputFile(mSampleFile.getAbsolutePath());
+        mRecorder.setAudioEncodingBitRate(SoundRecorder.BITRATE_AMR);
 
         // Handle IOException
         try {
